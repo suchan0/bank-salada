@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="script.js"></script>
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .post-container body,
+            input,
+            select,
+            label,
+            button {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+            .btn-container {
+                display: flex;
+                justify-content: center;
+            }
+            .btn-container button {
+                height: 10vh;
+                width: 272px;
+            }
+            .form-container {
+                display: flex;
+                justify-content: center;
+                margin: 30px;
+            }
+            form {
+                margin: 5px;
+            }
+            form input[type='date'] {
+                width: 100%;
+                display: block;
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="post-container">
+            <div class="btn-container">
+                <button id="showOutCome">지출</button>
+                <button id="showInCome">수입</button>
+            </div>
+            <div class="form-container">
+                <form action="" name="outcomeForm" class="">
+                    <input type="date" name="datePicker" id="" />
+                    <label for=""
+                        >어디에 쓰셨나요?<select name="optOutCome" id="">
+                            <option value="etc">etc</option>
+                            <option value="식비">식비</option>
+                            <option value="주거비">주거비</option>
+                            <option value="교통비">교통비</option>
+                        </select></label
+                    >
+                    <label for=""
+                        >금액 : <input type="text" name="money" id=""
+                    /></label>
+                    <button name="outcomeRegist" value="">등록</button>
+                </form>
+                <form action="" name="incomeForm" class="hidden">
+                    <input type="date" name="datePicker" id="" />
+                    <label for=""
+                        >어디서 버셨나요?<select name="optInCome" id="">
+                            <option value="etc">etc</option>
+                            <option value="식비">식비</option>
+                            <option value="주거비">주거비</option>
+                            <option value="교통비">교통비</option>
+                        </select></label
+                    >
+                    <label for=""
+                        >금액 : <input type="text" name="money" id=""
+                    /></label>
+                    <button name="incomeRegist" value="">등록</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>로그인</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <style>
+            * {
+            }
+            .logo {
+                color: black;
+                font-size: xx-large;
+                padding-top: 20px;
+                width: 200px;
+                margin: auto;
+            }
+            .login_box {
+                width: 300px;
+                height: 50px;
+                border-radius: 5px;
+                margin: auto;
+            }
+            .login_button {
+                background-color: darkgrey;
+                margin-top: 20px;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                color: white;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            .login {
+                padding: 50px 50px 50px 150px;
+                width: 600px;
+                margin: auto;
+                margin-top: 30px;
+                border-radius: 5px;
+                border-style: solid;
+            }
+            .sign_up {
+                width: 800px;
+                padding-left: 350px;
+                padding-top: 20px;
+            }
+            .sign_up_link {
+                font-size: 13px;
+                padding-left: 30px;
+            }
+
+            /* a태그들 마우스 올렸을때나 클릭하고 난 뒤에 색깔 바뀌거나 밑줄 생기는 현상 제거*/
+            A:link {
+                text-decoration: none;
+                color: black;
+            }
+            A:visited {
+                text-decoration: none;
+                color: black;
+            }
+            A:active {
+                text-decoration: none;
+                color: black;
+            }
+            A:hover {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <div class="logo">
+            <a href="/"><h1>뱅크사라다</h1></a>
+        </div>
+        <div class="login">
+            <input
+                class="login_box"
+                id="id_check"
+                aria-describedby="emailHelp"
+                placeholder="아이디"
+            />
+            <input
+                type="password"
+                class="login_box"
+                id="pw_check"
+                placeholder="비밀번호"
+            />
+            <button type="button" class="login_button" onclick="check()">
+                <a href="form.html">로그인</a>
+            </button>
+        </div>
+        <div class="sign_up">
+            <h5>
+                처음이신가요?<span class="sign_up_link"
+                    ><a href="/sign_up">회원가입 바로가기</a></span
+                >
+            </h5>
+        </div>
+    </body>
+</html>
